@@ -1,10 +1,13 @@
-import { Deprecated, Readonly } from "decoratory";
+import { Deprecated, Observe, Readonly } from "decoratory";
 
 class TestClass {
     private thing = 2;
 
     @Readonly
     public stuff = 5;
+
+    @Observe
+    public foo = 5;
 
     @Deprecated
     public deprecatedFunction(): void {
@@ -15,3 +18,4 @@ class TestClass {
 
 const t = new TestClass();
 t.deprecatedFunction();
+t.foo = 42;
