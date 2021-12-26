@@ -4,9 +4,11 @@
     "description": "Utility decorators for TypeScript.",
     "main": "build/index.js",
     "scripts": {
+        "dev": "tsc -w",
         "build": "tsc",
         "start": "node .",
-        "build:start": "npm run build && npm run start"
+        "build:start": "npm run build && npm run start",
+        "lint": "eslint --ext .ts src"
     },
     "repository": {
         "type": "git",

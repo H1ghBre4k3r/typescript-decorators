@@ -17,6 +17,7 @@ module.exports = {
     rules: {
         "prettier/prettier": 2, // Means error
         "import/extensions": [0, "never"],
+        "import/prefer-default-export": 0,
     },
     settings: {
         "import/resolver": {

@@ -1,0 +1,19 @@
+{
+    "name": "decorators-example",
+    "version": "1.0.0",
+    "description": "Sample project for using decorators",
+    "main": "build/index.js",
+    "scripts": {
+        "build": "tsc",
+        "start": "node .",
+        "build:start": "npm run build && npm run start"
+    },
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "typescript": "^4.5.4"
+    },
+    "dependencies": {
+        "typescript-decorators": "../"
+    }
+}
