@@ -1,4 +1,4 @@
-import { Deprecated } from "typescript-decorators";
+import { Deprecated } from "decoratory";
 
 class TestClass {
     private thing = 2;
