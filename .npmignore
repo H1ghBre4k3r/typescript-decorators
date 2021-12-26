@@ -8,12 +8,14 @@ coverage
 .prettierrc
 tsconfig.json
 tslint.json
+.eslintrc.js
 
 ## Git stuff
 .gitlab-ci.yml
 CHANGELOG.md
 CONTRIBUTING.md
 CODE_OF_CONDUCT.md
+.github
 
 ## npm stuff
 *.tgz
@@ -22,5 +24,4 @@ CODE_OF_CONDUCT.md
 src
 webpack.*
 *.map
-
 example

@@ -8,7 +8,8 @@
         "build": "tsc",
         "start": "node .",
         "build:start": "npm run build && npm run start",
-        "lint": "eslint --ext .ts src"
+        "lint": "eslint --ext .ts src",
+        "bundle": "rimraf build && webpack"
     },
     "repository": {
         "type": "git",
@@ -32,12 +33,18 @@
         "@types/node": "^17.0.5",
         "@typescript-eslint/eslint-plugin": "^5.8.0",
         "@typescript-eslint/parser": "^5.8.0",
+        "dts-bundle-webpack": "^1.0.2",
         "eslint": "^8.5.0",
         "eslint-config-airbnb-base": "^15.0.0",
         "eslint-config-prettier": "^8.3.0",
         "eslint-import-resolver-typescript": "^2.5.0",
         "eslint-plugin-import": "^2.25.3",
         "eslint-plugin-prettier": "^4.0.0",
-        "typescript": "^4.5.4"
+        "rimraf": "^3.0.2",
+        "ts-loader": "^9.2.6",
+        "typescript": "^4.5.4",
+        "webpack": "^5.65.0",
+        "webpack-cli": "^4.9.1",
+        "webpack-node-externals": "^3.0.0"
     }
 }
