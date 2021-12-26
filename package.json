@@ -1,0 +1,27 @@
+{
+    "name": "typescript-decorators",
+    "version": "0.1.0",
+    "description": "Utility decorators for TypeScript.",
+    "main": "build/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/H1ghBre4k3r/typescript-decorators"
+    },
+    "keywords": [
+        "typescript",
+        "decorators"
+    ],
+    "author": {
+        "email": "h1ghbre4k3r@dev.bre4k3r.de",
+        "name": "H1ghBre4k3r",
+        "url": "https://twitter.com/h1ghbre4k3r"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/H1ghBre4k3r/typescript-decorators/issues"
+    },
+    "homepage": "https://github.com/H1ghBre4k3r/typescript-decorators#readme"
+}
