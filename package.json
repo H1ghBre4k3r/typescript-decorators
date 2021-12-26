@@ -4,7 +4,9 @@
     "description": "Utility decorators for TypeScript.",
     "main": "build/index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "build": "tsc",
+        "start": "node .",
+        "build:start": "npm run build && npm run start"
     },
     "repository": {
         "type": "git",
@@ -23,5 +25,8 @@
     "bugs": {
         "url": "https://github.com/H1ghBre4k3r/typescript-decorators/issues"
     },
-    "homepage": "https://github.com/H1ghBre4k3r/typescript-decorators#readme"
+    "homepage": "https://github.com/H1ghBre4k3r/typescript-decorators#readme",
+    "devDependencies": {
+        "typescript": "^4.5.4"
+    }
 }
