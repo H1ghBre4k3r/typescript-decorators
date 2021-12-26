@@ -1,5 +1,5 @@
 {
-    "name": "typescript-decorators",
+    "name": "decoratory",
     "version": "0.1.0",
     "description": "Utility decorators for TypeScript.",
     "main": "build/index.js",
@@ -12,7 +12,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/H1ghBre4k3r/typescript-decorators"
+        "url": "https://github.com/H1ghBre4k3r/decoratory"
     },
     "keywords": [
         "typescript",
@@ -25,9 +25,9 @@
     },
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/H1ghBre4k3r/typescript-decorators/issues"
+        "url": "https://github.com/H1ghBre4k3r/decoratory/issues"
     },
-    "homepage": "https://github.com/H1ghBre4k3r/typescript-decorators#readme",
+    "homepage": "https://github.com/H1ghBre4k3r/decoratory#readme",
     "devDependencies": {
         "@types/node": "^17.0.5",
         "@typescript-eslint/eslint-plugin": "^5.8.0",
