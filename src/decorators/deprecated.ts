@@ -3,8 +3,9 @@ import { deprecate } from "util";
 type DeprecationMessage = string;
 
 function factory(message?: DeprecationMessage): MethodDecorator {
-    return (_target: unknown, propertyKey: string | symbol, descriptor: PropertyDescriptor) => {
-        const msg = message ?? `${String(propertyKey)} is deprecated!`;
+    return (target: object, propertyKey: string | symbol, descriptor: PropertyDescriptor) => {
+        const { name } = target.constructor;
+        const msg = message ?? `${name}#${String(propertyKey)} is deprecated!`;
         // eslint-disable-next-line no-param-reassign
         descriptor.value = deprecate(descriptor.value, msg);
         return descriptor;
