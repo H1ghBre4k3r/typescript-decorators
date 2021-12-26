@@ -29,6 +29,7 @@
     },
     "homepage": "https://github.com/H1ghBre4k3r/typescript-decorators#readme",
     "devDependencies": {
+        "@types/node": "^17.0.5",
         "@typescript-eslint/eslint-plugin": "^5.8.0",
         "@typescript-eslint/parser": "^5.8.0",
         "eslint": "^8.5.0",
