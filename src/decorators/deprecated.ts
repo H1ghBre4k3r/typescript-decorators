@@ -31,13 +31,16 @@ export function Deprecated(
     propertyKey?: string | symbol,
     descriptor?: PropertyDescriptor
 ): PropertyDescriptor | MethodDecorator {
+    // if both are set, Decorator was most likely directly invoked
     if (propertyKey && descriptor) {
         const Decorator = factory();
         const desc = Decorator(targetOrMessage as Record<string, unknown>, propertyKey, descriptor);
         return desc as PropertyDescriptor;
     }
+    // ...otherwise check, if provided message is a string
     if (typeof targetOrMessage === "string") {
         return factory(targetOrMessage);
     }
+    // decorator is used in a wrong way
     throw new Error("@Deprecated(msg) used with wrong parameter type for message!");
 }
