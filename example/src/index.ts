@@ -1,4 +1,4 @@
-import { Deprecated } from "decoratory";
+import { Deprecated, Nonnull } from "decoratory";
 
 class TestClass {
     private thing = 2;
@@ -8,8 +8,12 @@ class TestClass {
         // eslint-disable-next-line no-console
         console.log(`thing: ${this.thing}`);
     }
+
+    otherFunction(@Nonnull toAdd: number) {
+        console.log(`toAdd: ${this.thing + toAdd}`);
+    }
 }
 
 const t = new TestClass();
 t.deprecatedFunction();
-t.deprecatedFunction();
+t.otherFunction(4);
