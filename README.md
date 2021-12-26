@@ -43,3 +43,22 @@ class MyClass {
 
 new MyClass().deprecatedMethod(); // This will print "Custom Message" to the console
 ```
+
+### Readonly
+
+If you want to ensure, that a property can only be assigned _once_, you can use the `@Readonly` decorator:
+
+```ts
+import { Readonly } from "decoratory";
+
+class MyClass {
+    @Readonly
+    public foo = 24;
+
+    public myFunction() {
+        this.foo = 1337;
+    }
+}
+
+new MyClass().myFunction(); // This will throw a TypeError, since `MyClass.foo` cannot be reassigned
+```
