@@ -44,7 +44,7 @@ class MyClass {
 new MyClass().deprecatedMethod(); // This will print "Custom Message" to the console
 ```
 
-### Readonly
+<!-- ### Readonly
 
 If you want to ensure, that a property can only be assigned _once_, you can use the `@Readonly` decorator:
 
@@ -61,4 +61,32 @@ class MyClass {
 }
 
 new MyClass().myFunction(); // This will throw a TypeError, since `MyClass.foo` cannot be reassigned
+``` -->
+
+### Observe
+
+You can observe all changes (re-assignments) to a property by using the `@Observe` decorator:
+
+```ts
+import { Observe } from "decoratory";
+
+class MyClass {
+    @Observe
+    public foo = 42;
+}
+```
+
+Now, all changes to `MyClass.foo` will be logged to the console. To perform certain actions on reassignment, you can provide a custom callback to the decorator, which will get called with the new value upon each reassignment:
+
+```ts
+import { Observe } from "decoratory";
+
+function observeCallback(newValue: unknown) {
+    console.log(`setting value to ${newValue}`);
+}
+
+class MyClass {
+    @Observe(observeCallback)
+    public foo = 42;
+}
 ```

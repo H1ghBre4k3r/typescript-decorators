@@ -1,12 +1,17 @@
 import { Deprecated, Observe, Readonly } from "decoratory";
 
+function observeFn(value: unknown): void {
+    // eslint-disable-next-line no-console
+    console.log(`value = ${value}`);
+}
+
 class TestClass {
     private thing = 2;
 
     @Readonly
     public stuff = 5;
 
-    @Observe
+    @Observe(observeFn)
     public foo = 5;
 
     @Deprecated
@@ -19,3 +24,5 @@ class TestClass {
 const t = new TestClass();
 t.deprecatedFunction();
 t.foo = 42;
+
+new TestClass().stuff = 42;
