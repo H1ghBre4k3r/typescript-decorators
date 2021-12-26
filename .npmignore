@@ -13,6 +13,7 @@ tslint.json
 .gitlab-ci.yml
 CHANGELOG.md
 CONTRIBUTING.md
+CODE_OF_CONDUCT.md
 
 ## npm stuff
 *.tgz
@@ -21,3 +22,5 @@ CONTRIBUTING.md
 src
 webpack.*
 *.map
+
+example
