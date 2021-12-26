@@ -1,7 +1,10 @@
-import { Deprecated } from "decoratory";
+import { Deprecated, Readonly } from "decoratory";
 
 class TestClass {
     private thing = 2;
+
+    @Readonly
+    public stuff = 5;
 
     @Deprecated
     public deprecatedFunction(): void {
