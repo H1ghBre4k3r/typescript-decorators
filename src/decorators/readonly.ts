@@ -5,9 +5,9 @@ export const Readonly: PropertyDecorator = (target, propertyKey) => {
     // define property on target
     Object.defineProperty(target, propertyKey, {
         configurable: true,
-        set(v: unknown) {
+        set(this: object, v: unknown) {
             // in setter, redefine property, but this time non-writable
-            Object.defineProperty(target, propertyKey, {
+            Object.defineProperty(this, propertyKey, {
                 writable: false,
                 configurable: false,
                 value: v,
