@@ -24,5 +24,3 @@ class TestClass {
 const t = new TestClass();
 t.deprecatedFunction();
 t.foo = 42;
-
-new TestClass().stuff = 42;

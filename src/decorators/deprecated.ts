@@ -43,5 +43,5 @@ export function Deprecated(
         return factory(targetOrMessage);
     }
     // decorator is used in a wrong way
-    throw new Error("@Deprecated(msg) used with wrong parameter type for message!");
+    throw new TypeError("@Deprecated(msg) used with wrong parameter type for message!");
 }
