@@ -44,7 +44,7 @@ class MyClass {
 new MyClass().deprecatedMethod(); // This will print "Custom Message" to the console
 ```
 
-<!-- ### Readonly
+### Readonly
 
 If you want to ensure, that a property can only be assigned _once_, you can use the `@Readonly` decorator:
 
@@ -61,7 +61,7 @@ class MyClass {
 }
 
 new MyClass().myFunction(); // This will throw a TypeError, since `MyClass.foo` cannot be reassigned
-``` -->
+```
 
 ### Observe
 
