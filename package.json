@@ -40,7 +40,7 @@
         "eslint-import-resolver-typescript": "^3.1.0",
         "eslint-plugin-import": "^2.25.3",
         "eslint-plugin-prettier": "^4.0.0",
-        "rimraf": "^4.0.4",
+        "rimraf": "^5.0.0",
         "ts-loader": "^9.2.6",
         "typescript": "^5.0.2",
         "webpack": "^5.65.0",
