@@ -31,7 +31,7 @@
     "homepage": "https://github.com/H1ghBre4k3r/decoratory#readme",
     "devDependencies": {
         "@types/node": "^20.1.0",
-        "@typescript-eslint/eslint-plugin": "^5.8.0",
+        "@typescript-eslint/eslint-plugin": "^6.0.0",
         "@typescript-eslint/parser": "^5.8.0",
         "dts-bundle-webpack": "^1.0.2",
         "eslint": "^8.5.0",
